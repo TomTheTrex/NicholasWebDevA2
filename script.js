@@ -26,3 +26,8 @@ function showPage(pageId) {
         page.style.display = page.id === pageId ? 'block' : 'none';
     });
 }
+
+function playSound(sound) {
+    var sound = document.getElementById(sound);
+    sound.play();
+}
