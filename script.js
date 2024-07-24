@@ -1,13 +1,17 @@
+const pagebtn1 = document.getElementById('pagebtn1');
+const pagebtn2 = document.getElementById('pagebtn2');
+const pagebtn3 = document.getElementById('pagebtn3');
+
 pagebtn1.addEventListener('click', function() {
-    showPage(1);
+    showPage('home');
 });
 
 pagebtn2.addEventListener('click', function() {
-    showPage(2);
+    showPage('about');
 });
 
 pagebtn3.addEventListener('click', function() {
-    showPage(3);
+    showPage('simulation');
 });
 
 document.addEventListener('DOMContentLoaded', function() {
