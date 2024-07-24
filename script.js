@@ -1,13 +1,13 @@
 pagebtn1.addEventListener('click', function() {
-    showPage('home');
+    showPage(1);
 });
 
 pagebtn2.addEventListener('click', function() {
-    showPage('whistle');
+    showPage(2);
 });
 
 pagebtn3.addEventListener('click', function() {
-    showPage('simulation');
+    showPage(3);
 });
 
 document.addEventListener('DOMContentLoaded', function() {
