@@ -15,7 +15,7 @@ function showPage(pageId) {
     });
 }
 
-function playSound() {
-    var sound = document.getElementById("trainSound");
+function playSound(sound) {
+    var sound = document.getElementById(sound);
     sound.play();
 }
