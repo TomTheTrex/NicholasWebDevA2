@@ -27,7 +27,7 @@ function showPage(pageId) {
     });
 }
 
-function playSound(sound) {
-    var sound = document.getElementById(sound);
+function playSound(hi) {
+    var sound = document.getElementById(hi);
     sound.play();
 }
