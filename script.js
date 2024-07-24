@@ -27,6 +27,7 @@ function showPage(pageId) {
     });
 }
 
+
 function playSound(hi) {
     var sound = document.getElementById(hi);
     sound.play();
