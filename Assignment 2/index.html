@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Trains</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="buttons">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('whistle')">Whistle</button>
+        <button onclick="showPage('simulation')">Simulation</button>
+    </nav>
+
+    <div id="home" class="page">
+        <div class="content">
+            <h1>Welcome to My Train Website</h1>
+            <p>A steam locomotive is a locomotive that provides the force to move itself and other vehicles by means of the expansion of steam.
+            It is fuelled by burning combustible material (usually coal, oil or, rarely, wood) to heat water in the locomotive's boiler to the point where it becomes gaseous and its volume increases 1,700 times.
+            Functionally, it is a steam engine on wheels.</p>
+            <p>In most locomotives, the steam is admitted alternately to each end of its cylinders in which pistons are mechanically connected to the locomotive's main wheels.
+            Fuel and water supplies are usually carried with the locomotive, either on the locomotive itself or in a tender coupled to it.
+            Variations in this general design include electrically powered boilers, turbines in place of pistons, and using steam generated externally.</p>
+        </div>
+    </div>
+
+    <div id="whistle" class="page" style="display:none;">
+        <div class="content">
+            <h1>Whistles</h1>
+            <p>This page will contain information about the website and its purpose.</p>
+            <p>
+                A train whistle or air whistle (originally referred to as a train trumpet or air trumpet) is an audible signaling device on a steam or gas locomotive, used to warn that the train is approaching, and to communicate with rail workers.
+                Modern diesel and electric locomotives primarily use a powerful air horn instead of a whistle as an audible warning device.
+                However, the word whistle continues to be used by railroaders in referring to such signaling practices as "whistling off" (sounding the horn when a train gets underway).
+            </p>
+
+            <p>Single Blast</p>
+            <button onclick="playSound()">Play Train Sound</button>
+            <audio id="trainSound" src="sounds/SingleShortWhistle.mp3"></audio>
+
+            <p>Double Blast</p>
+            <button onclick="playSound()">Play Train Sound</button>
+            <audio id="trainSound2" src="sounds/DoubleShortWhistle.mp3"></audio>
+
+            <p>Triple Blast</p>
+            <button onclick="playSound()">Play Train Sound</button>
+            <audio id="trainSound3" src="sounds/TripleShortWhistle.mp3"></audio>
+
+            <p>Long Blast</p>
+            <button onclick="playSound()">Play Train Sound</button>
+            <audio id="trainSound4" src="sounds/SingleLongWhistle.mp3"></audio>
+
+            <p>Short Long Blast</p>
+            <button onclick="playSound()">Play Train Sound</button>
+            <audio id="trainSound5" src="sounds/ShortLongWhistle.mp3"></audio>    
+        </div>
+    </div>
+
+    <div id="simulation" class="page" style="display:none;">
+        <div class="content">
+            <h1>Train Simulation</h1>
+            <div id="simulation-area">
+                <div id="train"></div>
+            </div>
+            <button id="start-button">Start Train</button>
+        </div>
+    </div>
+</body>
+</html>
