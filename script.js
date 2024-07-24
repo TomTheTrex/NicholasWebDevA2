@@ -1,19 +1,3 @@
-const pagebtn1 = document.getElementById('pagebtn1');
-const pagebtn2 = document.getElementById('pagebtn2');
-const pagebtn3 = document.getElementById('pagebtn3');
-
-pagebtn1.addEventListener('click', function() {
-    showPage('home');
-});
-
-pagebtn2.addEventListener('click', function() {
-    showPage('about');
-});
-
-pagebtn3.addEventListener('click', function() {
-    showPage('simulation');
-});
-
 document.addEventListener('DOMContentLoaded', function() {
     const train = document.getElementById('train');
     const toggleButton = document.getElementById('toggle-button');
