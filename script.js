@@ -1,9 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
+pagebtn1.addEventListener('click', function() {
+    showPage('home');
+});
+
+pagebtn2.addEventListener('click', function() {
+    showPage('whistle');
+});
+
+pagebtn3.addEventListener('click', function() {
+    showPage('simulation');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     const train = document.getElementById('train');
     const toggleButton = document.getElementById('toggle-button');
     let moving = false;
     
-    toggleButton.addEventListener('click', () => {
+    toggleButton.addEventListener('click', function() {
         if (!moving) {
             // Start moving the train
             train.style.transition = 'left 5s linear';
@@ -22,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function showPage(pageId) {
     const pages = document.querySelectorAll('.page');
-    pages.forEach(page => {
+    pages.forEach( function(page) {
         page.style.display = page.id === pageId ? 'block' : 'none';
     });
 }
