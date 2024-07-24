@@ -39,11 +39,6 @@ body {
     left: 0;
 }
 
-#coal-consumed {
-    color: white;
-    margin-top: 10px;
-}
-
 .buttons {
     display: flex;
     justify-content: center;
@@ -63,6 +58,21 @@ body {
 }
 
 .buttons button:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+#start-button {
+    background-color: white;
+    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#start-button:hover {
     background-color: lightblue;
     color: white;
 }
